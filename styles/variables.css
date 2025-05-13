@@ -1,0 +1,79 @@
+/*! VARIABLES */
+:root {
+  --accent-color: #3030f3;
+}
+
+/*! GENERAL STYLES */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*! HEADER STYLES */
+.header {
+  padding: 10px 20px;
+  height: 80px;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  margin: 0px;
+}
+.header__nav-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.header__lang {
+  padding: 6px;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px #0000001a;
+  user-select: none;
+}
+.header__lang-button {
+  padding: 10px;
+  border: none;
+  background: none;
+  border-radius: 10px;
+  color: #00000060;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.header__lang-button:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.header__lang-button--active {
+  color: #000;
+}
+.header__nav-item {
+  position: relative;
+}
+.header__nav-item::before {
+  content: '';
+  bottom: -2px;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  scale: 0 1;
+  background-color: var(--accent-color);
+  transform-origin: center;
+  transition: 0.3s;
+}
+.header__nav-item:hover::before {
+  scale: 1;
+}

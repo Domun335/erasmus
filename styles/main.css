@@ -1,0 +1,64 @@
+@import url('./variables.css');
+
+/*! MAIN STYLES */
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main__slider {
+  margin: 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.main__slider-cointainer {
+  display: flex;
+  height: 600px;
+  animation: slide 16s infinite ease-in-out;
+}
+.main__slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  filter: brightness(0.8);
+}
+.main__slider-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.main__slider-title {
+  max-width: 600px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+}
+
+/*! ANIMATIONS */
+@keyframes slide {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%);
+  }
+  50%,
+  70% {
+    transform: translateX(-100%);
+  }
+  75%,
+  95% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
