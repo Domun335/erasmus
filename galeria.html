@@ -43,8 +43,11 @@
       </div>
     </header>
 
-    <h1>Galeria</h1>
-    <img src="/images/funded-by-eu.jpeg" alt="" width="400px" />
+    <main class="main">
+      <h1 class="main__title" data-pl="Galeria" data-en="Gallery"></h1>
+
+      <div class="main__gallery" id="gallery"></div>
+    </main>
 
     <footer class="footer">
       <p
@@ -56,5 +59,10 @@
         <img src="/images/funded-by-eu.jpeg" alt="Funded By EU" width="200px" />
       </div>
     </footer>
+
+    <div id="lightbox" class="lightbox hidden">
+      <span id="lightbox-close">&times;</span>
+      <img id="lightbox-img" src="" alt="Full view" />
+    </div>
   </body>
 </html>
