@@ -39,6 +39,79 @@
   color: #fff;
   text-shadow: 2px 2px 2px #000;
 }
+.main__info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.main__info-texts {
+  padding-block: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--second-color);
+  color: #fff;
+  font-weight: bold;
+}
+.main__info-description {
+  margin-top: 0px;
+  color: var(--color-text);
+}
+.main__info-title {
+  margin-top: 0px;
+  font-size: 2rem;
+}
+.main__info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.main__info-card {
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: var(--accent-color) 5px solid;
+  background-color: #fff;
+  box-shadow: 0 6px 16px #0000000d;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 8px;
+  transition: 0.3s;
+}
+.main__info-card:hover {
+  transform: translateY(-5px);
+}
+.main__info-card h3 {
+  margin: 0px;
+}
+.main__info-elements {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__info-element {
+  padding: 25px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px #0000000d;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__info-element h3 {
+  color: #1d4ed8;
+}
+.main__info-element h3,
+p {
+  margin: 0px;
+}
 
 /*! ANIMATIONS */
 @keyframes slide {

@@ -1,12 +1,15 @@
 /*! VARIABLES */
 :root {
-  --accent-color: #3030f3;
+  --second-color: #0f172a;
+  --accent-color: #0ea5e9;
+  --text-color: #00000050;
 }
 
 /*! GENERAL STYLES */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background: linear-gradient(to left, #e0f2fe, #fefce8);
 }
 a {
   text-decoration: none;
@@ -20,7 +23,7 @@ a {
 
 /*! HEADER STYLES */
 .header {
-  padding: 10px 20px;
+  padding: 10px 40px;
   height: 80px;
   background-color: #f8f9fa;
   display: flex;
@@ -76,4 +79,18 @@ a {
 }
 .header__nav-item:hover::before {
   scale: 1;
+}
+
+/*! FOOTER STYLES */
+.footer {
+  margin-top: 50px;
+  padding: 20px;
+  width: 100%;
+  background-color: var(--second-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
