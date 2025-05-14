@@ -13,7 +13,7 @@
   width: 100%;
   overflow: hidden;
 }
-.main__slider-cointainer {
+.main__slider-container {
   display: flex;
   height: 600px;
   animation: slide 16s infinite ease-in-out;
@@ -57,7 +57,7 @@
 }
 .main__info-description {
   margin-top: 0px;
-  color: var(--color-text);
+  color: var(--text-color);
 }
 .main__info-title {
   margin-top: 0px;
@@ -106,7 +106,7 @@
   gap: 10px;
 }
 .main__info-element h3 {
-  color: #1d4ed8;
+  color: var(--title-color);
 }
 .main__info-element h3,
 p {
