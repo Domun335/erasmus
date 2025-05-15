@@ -1,1 +1,48 @@
 @import url('./variables.css');
+
+.main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.main__title {
+  margin-block: 40px;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+.main__container {
+  max-width: 920px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main__card {
+  max-width: 450px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px #00000020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+.main__card:hover {
+  transform: scale(1.02);
+}
+.main__card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.main__card-title {
+  margin: 10px 0px;
+}
+.main__card-text {
+  margin: 0px;
+  color: var(--text-color);
+}
