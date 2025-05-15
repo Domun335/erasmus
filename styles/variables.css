@@ -96,3 +96,16 @@ a {
   flex-direction: column;
   gap: 10px;
 }
+.footer__text {
+  margin: 0px;
+}
+.footer__author {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.footer__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
