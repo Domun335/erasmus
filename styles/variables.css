@@ -2,8 +2,9 @@
 :root {
   --second-color: #0f172a;
   --accent-color: #0ea5e9;
-  --text-color: #00000050;
   --title-color: #1d4ed8;
+  --subtitle-color: #ffffff85;
+  --text-color: #374151;
 }
 
 /*! GENERAL STYLES */

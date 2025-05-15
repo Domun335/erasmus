@@ -57,7 +57,7 @@
 }
 .main__info-description {
   margin-top: 0px;
-  color: var(--text-color);
+  color: var(--subtitle-color);
 }
 .main__info-title {
   margin-top: 0px;
@@ -66,6 +66,7 @@
 .main__info-cards {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .main__info-card {
@@ -74,6 +75,7 @@
   border-radius: 12px;
   border-left: var(--accent-color) 5px solid;
   background-color: #fff;
+  color: var(--text-color);
   box-shadow: 0 6px 16px #0000000d;
   display: flex;
   justify-content: start;
@@ -101,6 +103,7 @@
   border-radius: 16px;
   box-shadow: 0 8px 20px #0000000d;
   background-color: #fff;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   gap: 10px;
