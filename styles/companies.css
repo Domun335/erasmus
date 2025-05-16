@@ -20,7 +20,6 @@
   gap: 20px;
 }
 .main__card {
-  margin-inline: 15px;
   max-width: 450px;
   padding: 20px;
   background-color: #fff;
@@ -47,4 +46,11 @@
 .main__card-text {
   margin: 0px;
   color: var(--text-color);
+}
+
+/*! MEDIA QUERY */
+@media all and (width <= 950px) {
+  .main__card {
+    margin-inline: 15px;
+  }
 }
