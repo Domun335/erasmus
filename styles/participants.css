@@ -23,6 +23,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 8px 20px #00000020;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,4 +41,17 @@
 }
 .main__card-text {
   margin: 0px;
+}
+
+/*! MEDIA QUERY */
+@media all and (width <= 1280px) {
+  .main__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (width <= 850px) {
+  .main__container {
+    margin-inline: 15px;
+    grid-template-columns: 1fr;
+  }
 }
