@@ -20,6 +20,7 @@
   gap: 20px;
 }
 .main__card {
+  margin-inline: 15px;
   max-width: 450px;
   padding: 20px;
   background-color: #fff;
