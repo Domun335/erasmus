@@ -1,5 +1,6 @@
 @import url('./variables.css');
 
+/*! GALLERY STYLES */
 .main {
   width: 100%;
   display: flex;
@@ -28,6 +29,7 @@
   transform: scale(1.02);
 }
 
+/*! LIGHTBOX STYLES */
 .lightbox {
   position: fixed;
   top: 0;
