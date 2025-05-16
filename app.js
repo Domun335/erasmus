@@ -36,8 +36,18 @@ function setGallery(imagesNames) {
   const lightbox = document.getElementById('lightbox')
   const lightboxImg = document.getElementById('lightbox-img')
   const lightboxClose = document.getElementById('lightbox-close')
+  const prevBtn = document.getElementById('prev-btn')
+  const nextBtn = document.getElementById('next-btn')
 
-  imagesNames.forEach((file) => {
+  let currentIndex = 0
+
+  function showImage(index) {
+    currentIndex = (index + imagesNames.length) % imagesNames.length
+    lightboxImg.src = `images/gallery/${imagesNames[currentIndex]}`
+    lightbox.classList.remove('hidden')
+  }
+
+  imagesNames.forEach((file, index) => {
     const img = document.createElement('img')
     img.src = `images/gallery/${file}`
     img.alt = file
@@ -46,8 +56,7 @@ function setGallery(imagesNames) {
     galleryDiv.appendChild(img)
 
     img.addEventListener('click', () => {
-      lightboxImg.src = img.src
-      lightbox.classList.remove('hidden')
+      showImage(index)
     })
   })
 
@@ -58,6 +67,29 @@ function setGallery(imagesNames) {
 
   lightbox.addEventListener('click', (e) => {
     if (e.target === lightbox) {
+      lightbox.classList.add('hidden')
+      lightboxImg.src = ''
+    }
+  })
+
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation()
+    showImage(currentIndex - 1)
+  })
+
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation()
+    showImage(currentIndex + 1)
+  })
+
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.classList.contains('hidden')) return
+
+    if (e.key === 'ArrowLeft') {
+      showImage(currentIndex - 1)
+    } else if (e.key === 'ArrowRight') {
+      showImage(currentIndex + 1)
+    } else if (e.key === 'Escape') {
       lightbox.classList.add('hidden')
       lightboxImg.src = ''
     }

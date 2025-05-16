@@ -69,9 +69,11 @@
       </div>
     </footer>
 
-    <div id="lightbox" class="lightbox hidden">
-      <span id="lightbox-close">&times;</span>
-      <img id="lightbox-img" src="" alt="Full view" />
+    <div class="lightbox hidden" id="lightbox">
+      <span class="lightbox__close" id="lightbox-close">&times;</span>
+      <button class="lightbox__nav" id="prev-btn">←</button>
+      <img class="lightbox__image" id="lightbox-img" src="" alt="Full view" />
+      <button class="lightbox__nav" id="next-btn">→</button>
     </div>
   </body>
 </html>
